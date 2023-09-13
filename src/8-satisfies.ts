@@ -1,17 +1,17 @@
 export {}
 
-type Talk = 'blah' | 'bleh' | 'huh'
+type Talk = 'blah' | 'bleh' | 'huh' | 'boo'
 
 class Frontendisti {
   constructor(public talk: Talk) {}
   present() {
     switch (this.talk) {
       case 'blah':
-        return 'boo'
+        return 4
       case 'bleh':
-        return 'get off the stage'
+        return 3
       case 'huh':
-        return 'not worth it'
+        return 1
     }
 
     this.talk satisfies never
